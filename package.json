@@ -1,7 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
-  "license": "MIT",
+  "name": "methodcall",
+  "description": "Methodcall",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
@@ -9,8 +10,8 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^2.0.33",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "gatsby": "^2.0.50",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
   }
 }
