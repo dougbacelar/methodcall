@@ -10,7 +10,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "2.0.52",
+    "gatsby": "2.0.55",
     "react": "16.7.0-alpha.2",
     "react-dom": "16.7.0-alpha.2"
   }
