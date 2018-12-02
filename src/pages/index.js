@@ -1,5 +1,5 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react';
+import { graphql } from 'gatsby';
 
 const HomePage = ({ data }) => {
   const posts = data.allHubspotPost.edges.map(({ node }) => (
