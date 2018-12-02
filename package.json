@@ -5,12 +5,14 @@
   "private": true,
   "scripts": {
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "dotenv": "6.1.0",
     "gatsby": "2.0.60",
+    "gatsby-source-hubspot": "2.0.1",
     "react": "16.7.0-alpha.2",
     "react-dom": "16.7.0-alpha.2"
   }
