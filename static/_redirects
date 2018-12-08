@@ -1,2 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
-https://methodcall.netlify.com/* https://methodcall.com/:splat 301!
+# https://methodcall.netlify.com/* https://methodcall.com/:splat 301!
