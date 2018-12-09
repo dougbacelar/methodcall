@@ -6,7 +6,7 @@ const BlogPostSummary = ({ slug, title, summary }) => (
     <h2>
       <Link to={slug}>{title}</Link>
     </h2>
-    <p dangerouslySetInnerHTML={{ __html: summary }} />
+    <div dangerouslySetInnerHTML={{ __html: summary }} />
   </article>
 );
 
