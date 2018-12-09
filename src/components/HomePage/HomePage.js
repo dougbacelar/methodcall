@@ -1,13 +1,11 @@
 import React from 'react';
 
+import Post from './Post';
 import './styles.css';
 
 const HomePage = ({ data }) => {
   const posts = data.allHubspotPost.edges.map(({ node }) => (
-    <article key={node.id}>
-      <h2>{node.title}</h2>
-      <p>{node.summary}</p>
-    </article>
+    <Post slug={node.slug} summary={node.summary} title={node.title} />
   ));
 
   return (
