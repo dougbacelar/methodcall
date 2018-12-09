@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './styles.css';
+
 const HomePage = ({ data }) => {
   const posts = data.allHubspotPost.edges.map(({ node }) => (
     <article key={node.id}>
@@ -8,7 +10,11 @@ const HomePage = ({ data }) => {
     </article>
   ));
 
-  return <main>{posts}</main>;
+  return (
+    <div className='wrapper'>
+      <main className='home-page'>{posts}</main>
+    </div>
+  );
 };
 
 export default HomePage;
