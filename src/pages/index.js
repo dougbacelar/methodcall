@@ -14,6 +14,7 @@ export const pageQuery = graphql`
           title
           body
           slug
+          summary
           meta {
             title
             description
