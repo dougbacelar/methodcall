@@ -15,7 +15,7 @@ setupEnvironment();
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-source-hubspot',
+      resolve: '@dougbacelar/gatsby-source-hubspot',
       options: {
         key: process.env.HUBSPOT_API_KEY,
       },
