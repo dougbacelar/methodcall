@@ -1,18 +1,18 @@
 import React from 'react';
 
-import Post from './Post';
-import './styles.css';
+import BlogPostSummary from './BlogPostSummary';
+import Layout from '../Layout';
 
-const HomePage = ({ data }) => {
-  const posts = data.allHubspotPost.edges.map(({ node }) => (
-    <Post slug={node.slug} summary={node.summary} title={node.title} />
+const HomePage = ({ posts }) => {
+  const postsSummaries = posts.map(({ node }) => (
+    <BlogPostSummary
+      slug={node.slug}
+      summary={node.summary}
+      title={node.title}
+    />
   ));
 
-  return (
-    <div className='wrapper'>
-      <main className='home-page'>{posts}</main>
-    </div>
-  );
+  return <Layout>{postsSummaries}</Layout>;
 };
 
 export default HomePage;

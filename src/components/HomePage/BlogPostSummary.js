@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const Post = ({ slug, title, summary }) => (
+const BlogPostSummary = ({ slug, title, summary }) => (
   <article key={slug}>
     <h2>
       <Link to={slug}>{title}</Link>
@@ -10,4 +10,4 @@ const Post = ({ slug, title, summary }) => (
   </article>
 );
 
-export default Post;
+export default BlogPostSummary;

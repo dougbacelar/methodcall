@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import HomePage from '../components/HomePage/HomePage';
 
-const App = ({ data }) => <HomePage data={data} />;
+const App = ({ data }) => <HomePage posts={data.allHubspotPost.edges} />;
 
 export const pageQuery = graphql`
   {
