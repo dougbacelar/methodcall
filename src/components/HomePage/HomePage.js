@@ -6,6 +6,7 @@ import Layout from '../Layout';
 const HomePage = ({ posts }) => {
   const postsSummaries = posts.map(({ node }) => (
     <BlogPostSummary
+      key={node.slug}
       slug={node.slug}
       summary={node.summary}
       title={node.title}
