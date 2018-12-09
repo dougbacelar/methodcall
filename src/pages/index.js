@@ -1,13 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-const HomePage = ({ data }) => {
-  const posts = data.allHubspotPost.edges.map(({ node }) => (
-    <div key={node.id}>{node.title}</div>
-  ));
+import HomePage from '../components/HomePage';
 
-  return posts;
-};
+const App = ({ data }) => <HomePage data={data} />;
 
 export const pageQuery = graphql`
   {
@@ -28,4 +24,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default HomePage;
+export default App;
