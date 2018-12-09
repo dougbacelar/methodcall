@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import HomePage from '../components/HomePage';
+import HomePage from '../components/HomePage/HomePage';
 
 const App = ({ data }) => <HomePage data={data} />;
 
