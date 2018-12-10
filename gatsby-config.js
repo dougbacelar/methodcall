@@ -15,13 +15,12 @@ setupEnvironment();
 module.exports = {
   plugins: [
     {
-      resolve: '@dougbacelar/gatsby-source-hubspot',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        key: process.env.HUBSPOT_API_KEY,
-      },
-      filters: {
-        state: 'PUBLISHED',
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
       },
     },
+    { resolve: 'gatsby-transformer-remark' },
   ],
 };

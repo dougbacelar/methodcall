@@ -3,22 +3,22 @@ import { graphql } from 'gatsby';
 
 import HomePage from '../components/HomePage/HomePage';
 
-const App = ({ data }) => <HomePage posts={data.allHubspotPost.edges} />;
+const App = ({ data }) => <HomePage posts={data.allMarkdownRemark.edges} />;
 
-export const pageQuery = graphql`
-  {
-    allHubspotPost(limit: 10) {
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          id
-          title
-          body
-          slug
-          summary
-          meta {
-            title
-            description
+          fields {
+            slug
           }
+          frontmatter {
+            date(formatString: "DD MMMM, YYYY")
+            spoiler
+            title
+          }
+          id
         }
       }
     }

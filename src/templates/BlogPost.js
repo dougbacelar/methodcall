@@ -3,24 +3,24 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
 export default ({ data }) => {
-  const post = data.allHubspotPost.edges[0].node;
+  const post = data.markdownRemark;
 
   return (
     <Layout>
-      <h1>{post.title}</h1>
-      <p dangerouslySetInnerHTML={{ __html: post.body }} />
+      <h1>{post.frontmatter.title}</h1>
+      <small>{post.frontmatter.date}</small>
+      <p dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   );
 };
 
 export const query = graphql`
-  query($slug: String!) {
-    allHubspotPost(limit: 1, filter: { slug: { eq: $slug } }) {
-      edges {
-        node {
-          title
-          body
-        }
+  query BlogPostBySlug($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        date
+        title
       }
     }
   }

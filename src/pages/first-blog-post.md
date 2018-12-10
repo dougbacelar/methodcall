@@ -1,7 +1,7 @@
 ---
-title: My first blog post
 date: '2018-12-10'
 spoiler: This is a sample post for testing purposes.
+title: My first blog post
 ---
 
 Here is some jsx code:

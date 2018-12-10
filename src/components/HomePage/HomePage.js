@@ -6,10 +6,11 @@ import Layout from '../Layout';
 const HomePage = ({ posts }) => {
   const postsSummaries = posts.map(({ node }) => (
     <BlogPostSummary
-      key={node.slug}
-      slug={node.slug}
-      summary={node.summary}
-      title={node.title}
+      date={node.frontmatter.date}
+      key={node.id}
+      slug={node.fields.slug}
+      spoiler={node.frontmatter.spoiler}
+      title={node.frontmatter.title}
     />
   ));
 
