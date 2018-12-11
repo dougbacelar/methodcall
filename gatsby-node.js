@@ -2,25 +2,22 @@ const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 const getSlug = (post) => post.node.fields.slug;
+const getTitle = (post) => post.node.frontmatter.title;
 
-const extractPostData = (post) => {
-  const title = post.node.frontmatter.title;
-
-  return {
+const extractPostData = (post) =>
+  post && {
     slug: getSlug(post),
-    title,
+    title: getTitle(post),
   };
-};
 
 const getPreviousPost = (posts, index) => {
-  const previousPost =
-    index === posts.length - 1 ? null : posts[index + 1].node;
+  const previousPost = index === posts.length - 1 ? null : posts[index + 1];
 
   return extractPostData(previousPost);
 };
 
 const getNextPost = (posts, index) => {
-  const nextPost = index === 0 ? null : posts[index - 1].node;
+  const nextPost = index === 0 ? null : posts[index - 1];
 
   return extractPostData(nextPost);
 };
