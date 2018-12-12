@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "dotenv": "6.2.0",
-    "gatsby": "2.0.64",
+    "gatsby": "2.0.66",
     "gatsby-image": "2.0.24",
     "gatsby-plugin-sharp": "2.0.15",
     "gatsby-source-filesystem": "2.0.12",
