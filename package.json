@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "dotenv": "6.2.0",
-    "gatsby": "2.0.66",
+    "gatsby": "2.0.67",
     "gatsby-source-filesystem": "2.0.12",
     "gatsby-transformer-remark": "2.1.15",
     "react": "16.7.0-alpha.2",
