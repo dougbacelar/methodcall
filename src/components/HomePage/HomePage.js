@@ -7,6 +7,7 @@ const HomePage = ({ posts }) => {
   const postsSummaries = posts.map(({ node }) => (
     <BlogPostSummary
       date={node.frontmatter.date}
+      featuredImage={node.frontmatter.featuredImage}
       key={node.id}
       slug={node.fields.slug}
       spoiler={node.frontmatter.spoiler}

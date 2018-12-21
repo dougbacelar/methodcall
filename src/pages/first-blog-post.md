@@ -1,5 +1,6 @@
 ---
 date: '2018-12-10'
+featuredImage: '../assets/images/basketball-court-sunset-beach.jpg'
 spoiler: This is a sample post for testing purposes.
 title: My first blog post
 ---

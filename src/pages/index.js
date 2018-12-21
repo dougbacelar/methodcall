@@ -15,6 +15,13 @@ export const query = graphql`
           }
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
+            featuredImage {
+              childImageSharp {
+                sizes(maxWidth: 720) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
             spoiler
             title
           }

@@ -1,11 +1,18 @@
+import Img from 'gatsby-image';
 import React from 'react';
 import { Link } from 'gatsby';
 
-const BlogPostSummary = ({ date, slug, spoiler, title }) => (
+const BlogPostSummary = ({ date, featuredImage, slug, spoiler, title }) => (
   <article key={slug}>
-    <h2>
-      <Link to={slug}>{title}</Link>
-    </h2>
+    <Link to={slug}>
+      <h2>{title}</h2>
+    </Link>
+    <Link to={slug}>
+      <Img
+        sizes={featuredImage.childImageSharp.sizes}
+        style={{ maxHeight: '15rem' }}
+      />
+    </Link>
     <small>{date}</small>
     <p dangerouslySetInnerHTML={{ __html: spoiler }} />
   </article>
