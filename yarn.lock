@@ -2005,7 +2005,7 @@ babel-template@^6.24.1, babel-template@^6.26.0:
     babylon "^6.18.0"
     lodash "^4.17.4"
 
-babel-traverse@6.26.0, babel-traverse@^6.24.1, babel-traverse@^6.26.0:
+babel-traverse@^6.24.1, babel-traverse@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-traverse/-/babel-traverse-6.26.0.tgz#46a9cbd7edcc62c8e5c064e2d2d8d0f4035766ee"
   integrity sha1-RqnL1+3MYsjlwGTi0tjQ9ANXZu4=
@@ -3262,7 +3262,7 @@ cosmiconfig@^4.0.0:
     parse-json "^4.0.0"
     require-from-string "^2.0.1"
 
-cosmiconfig@^5.0.0, cosmiconfig@^5.0.5, cosmiconfig@^5.0.6:
+cosmiconfig@^5.0.0, cosmiconfig@^5.0.5, cosmiconfig@^5.0.7:
   version "5.0.7"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.0.7.tgz#39826b292ee0d78eda137dfa3173bd1c21a43b04"
   integrity sha512-PcLqxTKiDmNT6pSpy4N6KtuPwb53W+2tzNvwOZw0WH9N6O0vLIBq0x8aj8Oj75ere4YcGi48bDFCL+3fRJdlNA==
@@ -5591,10 +5591,10 @@ gatsby-source-filesystem@2.0.12:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-transformer-remark@2.1.15:
-  version "2.1.15"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.1.15.tgz#c744bebdcb94017409826011a3f78af8c1e0ff1c"
-  integrity sha512-4epqs8BNyQBHMISQM3fvBulwWoOECCGrGkbO2+LVb9NEBlEEw9NBGiT6nvXrDUag47XgAM/5+l4dRu+Xl9urAA==
+gatsby-transformer-remark@2.1.17:
+  version "2.1.17"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.1.17.tgz#9cba3a0f6ecde105e53e476b279a63064251b21c"
+  integrity sha512-3AhjcJ8cPlhjl/DxZBENHOtn9QhdekKzAhUToNXQzIljhxbGU2KdqBoX9vZZ2zwKwrNJIbh5XNmKb590ueUrYA==
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
@@ -5628,10 +5628,10 @@ gatsby-transformer-sharp@2.1.9:
     probe-image-size "^4.0.0"
     sharp "^0.21.0"
 
-gatsby@2.0.66:
-  version "2.0.66"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.66.tgz#18a3421bb680dcf818c88c37442e0e61682bb6c1"
-  integrity sha512-WVrGTDAMRi9IpXivPN8edhS5fXPwgeFCz4gzW4k7YQZMe1nHf/Eqhbuoe/BoNuzt1lz4S7SZ3o8GTCTYKNEhRA==
+gatsby@2.0.70:
+  version "2.0.70"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.70.tgz#d8115bb9c127653b38a94a309f6c7283d8c02f7f"
+  integrity sha512-Nx7Sbp2vuz6LrbgQN6LeZJmYn1oXJHnkGAhBS93vONBRBizVTzEPJPcaBAZrfJLyQvPez4y68oSpmUMlwEpBjg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5650,7 +5650,6 @@ gatsby@2.0.66:
     babel-plugin-dynamic-import-node "^1.2.0"
     babel-plugin-remove-graphql-queries "^2.5.2"
     babel-preset-gatsby "^0.1.6"
-    babel-traverse "6.26.0"
     better-queue "^3.8.6"
     bluebird "^3.5.0"
     browserslist "3.2.8"
@@ -5693,7 +5692,7 @@ gatsby@2.0.66:
     glob "^7.1.1"
     graphql "^0.13.2"
     graphql-relay "^0.5.5"
-    graphql-skip-limit "^2.0.3"
+    graphql-skip-limit "^2.0.4"
     graphql-tools "^3.0.4"
     graphql-type-json "^0.2.1"
     hash-mod "^0.0.5"
@@ -5726,7 +5725,7 @@ gatsby@2.0.66:
     raw-loader "^0.5.1"
     react-dev-utils "^4.2.1"
     react-error-overlay "^3.0.0"
-    react-hot-loader "^4.5.1"
+    react-hot-loader "^4.6.0"
     redux "^4.0.0"
     relay-compiler "1.5.0"
     request "^2.85.0"
@@ -6111,10 +6110,10 @@ graphql-request@^1.5.0:
   dependencies:
     cross-fetch "2.2.2"
 
-graphql-skip-limit@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/graphql-skip-limit/-/graphql-skip-limit-2.0.3.tgz#49fff679fd1972a5b329646ecbc20f7f3c1371f8"
-  integrity sha512-txbv3unXTwUGgistMAPAZfXYqcJuhy3Qhv9+kzYp5GIHMlHmScIkv0dXqxxnUYrdym8/9PfwJeOcia9deDIJxA==
+graphql-skip-limit@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/graphql-skip-limit/-/graphql-skip-limit-2.0.4.tgz#54a612d3af7a374c34f9ac626b700422cb056ef2"
+  integrity sha512-DON43cmo14EelcEM4nrB5njGw6r/JqeBvmeM7qI02CE1YbwY98blx/pGeuyjybRPDVNXahRxIMVAC8lX1CAFAg==
   dependencies:
     "@babel/runtime" "^7.0.0"
 
@@ -6601,12 +6600,12 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-husky@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-1.2.0.tgz#d631dda1e4a9ee8ba69a10b0c51a0e2c66e711e5"
-  integrity sha512-/ib3+iycykXC0tYIxsyqierikVa9DA2DrT32UEirqNEFVqOj1bFMTgP3jAz8HM7FgC/C8pc/BTUa9MV2GEkZaA==
+husky@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-1.3.0.tgz#fbb97b5e52739d945fd86c3bf92def0ea60175c4"
+  integrity sha512-0Yfh4PkWr8Nrume/lEMgSgK5zg8Q19jGM7jDmN7H92VrqgcYSbn+CM1iLGmAvQSNWuaPx9iq/rq/4Y8LPX6dLA==
   dependencies:
-    cosmiconfig "^5.0.6"
+    cosmiconfig "^5.0.7"
     execa "^1.0.0"
     find-up "^3.0.0"
     get-stdin "^6.0.0"
@@ -10419,10 +10418,10 @@ react-error-overlay@^3.0.0:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
   integrity sha512-XzgvowFrwDo6TWcpJ/WTiarb9UI6lhA4PMzS7n1joK3sHfBBBOQHUc0U4u57D6DWO9vHv6lVSWx2Q/Ymfyv4hw==
 
-react-hot-loader@^4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.5.1.tgz#4a9cf136542b1db4f948ac74b31fa16a411ceebb"
-  integrity sha512-aqw8F0ZTCakfTXTj1n3F9vXfEKWWHEpQ3Mq9YmYvrNdHvey5RfkSGv7rz4r9TXjqVLt2mpItqydJQdhboZ/acQ==
+react-hot-loader@^4.6.0:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.6.1.tgz#7b4ebbbf931d864e78b31c25eee813fcf1ecfa99"
+  integrity sha512-BrMa/zyVq7aeHa2TDG6cVFgMiUut6OHZ/RkPqVHovsFbo0VI8VX7qCz2dYTDHFc9HtVrSUbJGd9LpFPIWtExBg==
   dependencies:
     fast-levenshtein "^2.0.6"
     global "^4.3.0"
