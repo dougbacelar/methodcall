@@ -14,13 +14,22 @@ setupEnvironment();
 
 module.exports = {
   plugins: [
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
-    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     { resolve: 'gatsby-transformer-remark' },
+    {
+      options: {
+        name: 'pages',
+        path: `${__dirname}/src/pages`,
+      },
+      resolve: 'gatsby-source-filesystem',
+    },
+    {
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/assets/images`,
+      },
+      resolve: 'gatsby-source-filesystem',
+    },
   ],
 };
