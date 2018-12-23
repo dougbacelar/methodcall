@@ -17,6 +17,8 @@ Here is a test [link](https://reactjs.org/docs/)
 
 Some inline highlighting `<Greeting />`
 
+`js±function(){ console.log('some very very long inline javascript function') }`
+
 Now, _this should be itallic_!
 
 **I wonder if bold works?**
@@ -25,7 +27,7 @@ Now, _this should be itallic_!
 
 More stuff
 
-```jsx{5}
+```js{2,5}
 // some comments
 const complicatedSum = () => 2 + 2; // answer is probably 4
 

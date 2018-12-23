@@ -19,6 +19,23 @@ module.exports = {
     { resolve: 'gatsby-transformer-remark' },
     {
       options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              aliases: {},
+              classPrefix: 'language-',
+              inlineCodeMarker: '±',
+              noInlineHighlight: false,
+              showLineNumbers: false,
+            },
+          },
+        ],
+      },
+      resolve: 'gatsby-transformer-remark',
+    },
+    {
+      options: {
         name: 'pages',
         path: `${__dirname}/src/pages`,
       },
