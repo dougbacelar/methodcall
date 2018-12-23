@@ -68,7 +68,6 @@ git commit
 Greetings traveller
 You shall not be led astray
 For your mind always knows the way
-
 ```
 
 ---
