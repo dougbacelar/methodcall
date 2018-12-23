@@ -1,7 +1,12 @@
 import React from 'react';
 
 export default ({ children }) => (
-  <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <main style={{ flexGrow: 1, maxWidth: '45rem' }}>{children}</main>
-  </div>
+  <main
+    style={{
+      margin: '0 auto',
+      maxWidth: '45rem',
+      padding: '0 1rem',
+    }}>
+    {children}
+  </main>
 );
