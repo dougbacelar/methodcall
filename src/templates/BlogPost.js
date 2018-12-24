@@ -9,9 +9,12 @@ export default ({ data }) => {
   return (
     <Layout>
       <h1>{post.frontmatter.title}</h1>
-      <small>{post.frontmatter.date}</small>
+      <small style={{ display: 'flex' }}>
+        {post.frontmatter.date}
+        <EditPageLink slug={post.fields.slug} useGithubIcon={true} />
+      </small>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <EditPageLink slug={post.fields.slug} />
+      <EditPageLink slug={post.fields.slug} style={{ float: 'right' }} />
     </Layout>
   );
 };
