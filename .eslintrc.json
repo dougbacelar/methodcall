@@ -9,6 +9,7 @@
     "ecmaFeatures": {
       "jsx": true
     },
+    "ecmaVersion": 9,
     "sourceType": "module"
   },
   "plugins": ["react"],
