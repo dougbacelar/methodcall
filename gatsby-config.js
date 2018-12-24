@@ -14,8 +14,9 @@ setupEnvironment();
 
 module.exports = {
   plugins: [
-    'gatsby-transformer-sharp',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     { resolve: 'gatsby-transformer-remark' },
     {
       options: {
@@ -61,4 +62,12 @@ module.exports = {
       resolve: 'gatsby-plugin-typography',
     },
   ],
+  siteMetadata: {
+    author: 'Doug Bacelar',
+    description:
+      'Personal blog about React, Javascript and software development.',
+    siteUrl: 'https://methodcall.com',
+    title: 'Method Call',
+    twitter: '@doug_bacelar',
+  },
 };

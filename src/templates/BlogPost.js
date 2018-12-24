@@ -4,26 +4,32 @@ import Layout from '../components/Layout';
 import EditPageLink from '../components/EditPageLink';
 import converDateString from '../utils/date';
 import Img from 'gatsby-image';
+import PageMetadata from '../components/PageMetadata';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   const dateString = post.frontmatter.date;
+  const slug = post.fields.slug;
+  const fluidImage = post.frontmatter.featuredImage.childImageSharp.fluid;
 
   return (
     <Layout>
+      <PageMetadata
+        description={post.frontmatter.spoiler}
+        image={fluidImage.src}
+        pageTitle={post.frontmatter.title}
+        slug={slug}
+      />
       <article>
         <h1>{post.frontmatter.title}</h1>
         <time dateTime={dateString}>
           <small>{converDateString(dateString)}</small>
         </time>
-        <EditPageLink slug={post.fields.slug} useGithubIcon={true} />
-        <Img
-          sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-          style={{ maxHeight: '30rem' }}
-        />
+        <EditPageLink slug={slug} useGithubIcon={true} />
+        <Img fluid={fluidImage} style={{ maxHeight: '30rem' }} />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <EditPageLink
-          slug={post.fields.slug}
+          slug={slug}
           style={{
             display: 'inline-flex',
             float: 'right',
@@ -45,11 +51,12 @@ export const query = graphql`
         date
         featuredImage {
           childImageSharp {
-            sizes(maxWidth: 900) {
-              ...GatsbyImageSharpSizes
+            fluid(maxWidth: 900) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
+        spoiler
         title
       }
     }

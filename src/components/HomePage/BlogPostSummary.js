@@ -10,7 +10,7 @@ const BlogPostSummary = ({ date, featuredImage, slug, spoiler, title }) => (
     </Link>
     <Link to={slug}>
       <Img
-        sizes={featuredImage.childImageSharp.sizes}
+        fluid={featuredImage.childImageSharp.fluid}
         style={{ maxHeight: '12rem' }}
       />
     </Link>
