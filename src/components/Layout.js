@@ -5,7 +5,7 @@ export default ({ children }) => (
     style={{
       margin: '0 auto',
       maxWidth: '45rem',
-      padding: '0 1rem',
+      padding: '0 1rem 4rem 1rem',
     }}>
     {children}
   </main>
