@@ -13,7 +13,6 @@ export default ({ slug, style, useGithubIcon }) => (
     rel='noopener noreferrer'
     style={{
       backgroundImage: 'none',
-      display: 'flex',
       marginLeft: '0.3rem',
       ...style,
     }}

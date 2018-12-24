@@ -14,7 +14,7 @@ export const query = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date
             featuredImage {
               childImageSharp {
                 sizes(maxWidth: 900) {
