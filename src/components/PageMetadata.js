@@ -37,6 +37,10 @@ function PageMetadata({ description, image, pageTitle, slug }) {
             <html lang='en' />
 
             <meta content={siteMetadata.author} name='author' />
+            <meta
+              content='A2l1nMQDpwMbFXoBXMAmYj8FLClKchc0_HwW4hk3EhE'
+              name='google-site-verification'
+            />
             <meta content={metaDescription} property='og:description' />
             <meta content='en' property='og:locale' />
             <meta content={siteTitle} property='og:site_name' />
