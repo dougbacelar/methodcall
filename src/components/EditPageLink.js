@@ -8,8 +8,9 @@ const GITHUB_PAGES_LINK =
 
 const getEditPageLink = (slug) => `${GITHUB_PAGES_LINK}${slug.slice(0, -1)}.md`;
 
-export default ({ slug, style, useGithubIcon }) => (
+export default ({ className, slug, style, useGithubIcon }) => (
   <OutboundLink
+    className={className}
     href={getEditPageLink(slug)}
     rel='noopener noreferrer'
     style={{
