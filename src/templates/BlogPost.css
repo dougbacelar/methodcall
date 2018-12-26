@@ -12,13 +12,19 @@ article.blog-post .featured-image {
   margin-bottom: 3rem;
 }
 
+article.blog-post header > .edit-page-header-link {
+  margin-left: 0.3rem;
+}
+
 article.blog-post footer {
   border-top: 1px solid lightgray;
+  display: flex;
+  margin-bottom: 3rem;
   margin-top: 2rem;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 article.blog-post footer > .edit-page-footer-link {
   display: inline-flex;
-  float: right;
+  margin-left: auto;
 }

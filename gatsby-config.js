@@ -68,6 +68,7 @@ module.exports = {
     author: 'Doug Bacelar',
     description:
       'Personal blog about React, Javascript and software development.',
+    disqusShortname: 'methodcall',
     siteUrl: 'https://methodcall.com',
     title: 'Method Call',
     twitter: '@doug_bacelar',
