@@ -22,24 +22,19 @@ export default ({ data }) => {
         slug={slug}
       />
       <article className='blog-post'>
-        <h1>{post.frontmatter.title}</h1>
-        <time dateTime={dateString}>
-          <small>{converDateString(dateString)}</small>
-        </time>
-        <EditPageLink slug={slug} useGithubIcon={true} />
-        <Img
-          fluid={fluidImage}
-          style={{ maxHeight: '30rem', marginBottom: '3rem' }}
-        />
+        <header>
+          <h1>{post.frontmatter.title}</h1>
+          <time dateTime={dateString}>
+            <small>{converDateString(dateString)}</small>
+          </time>
+          <EditPageLink slug={slug} useGithubIcon={true} />
+          <Img className='featured-image' fluid={fluidImage} />
+        </header>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <footer>
+          <EditPageLink className='edit-page-footer-link' slug={slug} />
+        </footer>
       </article>
-      <EditPageLink
-        slug={slug}
-        style={{
-          display: 'inline-flex',
-          float: 'right',
-        }}
-      />
     </Layout>
   );
 };

@@ -1,7 +1,7 @@
 ---
 date: '2018-12-26'
 featuredImage: '../assets/images/basketball-court-sunset-beach.jpg'
-spoiler: Learn what is React.lazy and start code-splitting your app for performance.
+spoiler: Learn what is React.lazy and start code-splitting your app for better performance.
 title: How to use React.lazy
 ---
 

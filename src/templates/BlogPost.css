@@ -1,10 +1,24 @@
 article.blog-post {
-  border-bottom: 1px solid lightgray;
-  margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
 
 article.blog-post p > img {
   display: flex;
   margin: 0 auto;
+}
+
+article.blog-post .featured-image {
+  max-height: 30rem;
+  margin-bottom: 3rem;
+}
+
+article.blog-post footer {
+  border-top: 1px solid lightgray;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+article.blog-post footer > .edit-page-footer-link {
+  display: inline-flex;
+  float: right;
 }
