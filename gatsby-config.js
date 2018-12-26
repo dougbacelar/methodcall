@@ -18,10 +18,10 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',
-    { resolve: 'gatsby-transformer-remark' },
     {
       options: {
         plugins: [
+          'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-prismjs',
             options: {

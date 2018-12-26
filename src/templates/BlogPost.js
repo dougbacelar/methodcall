@@ -5,6 +5,7 @@ import EditPageLink from '../components/EditPageLink';
 import converDateString from '../utils/date';
 import Img from 'gatsby-image';
 import PageMetadata from '../components/PageMetadata';
+import './BlogPost.css';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -20,22 +21,25 @@ export default ({ data }) => {
         pageTitle={post.frontmatter.title}
         slug={slug}
       />
-      <article>
+      <article className='blog-post'>
         <h1>{post.frontmatter.title}</h1>
         <time dateTime={dateString}>
           <small>{converDateString(dateString)}</small>
         </time>
         <EditPageLink slug={slug} useGithubIcon={true} />
-        <Img fluid={fluidImage} style={{ maxHeight: '30rem' }} />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <EditPageLink
-          slug={slug}
-          style={{
-            display: 'inline-flex',
-            float: 'right',
-          }}
+        <Img
+          fluid={fluidImage}
+          style={{ maxHeight: '30rem', marginBottom: '3rem' }}
         />
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
+      <EditPageLink
+        slug={slug}
+        style={{
+          display: 'inline-flex',
+          float: 'right',
+        }}
+      />
     </Layout>
   );
 };
