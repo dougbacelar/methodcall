@@ -28,9 +28,9 @@
     "react-disqus-comments": "1.4.0",
     "react-dom": "16.8.1",
     "react-helmet": "5.2.0",
-    "react-typography": "0.16.18",
-    "typography": "0.16.18",
-    "typography-theme-fairy-gates": "0.16.18"
+    "react-typography": "0.16.19",
+    "typography": "0.16.19",
+    "typography-theme-fairy-gates": "0.16.19"
   },
   "devDependencies": {
     "eslint": "5.15.1",
