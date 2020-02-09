@@ -5,13 +5,13 @@ spoiler: React setState function is asynchronous, understand how to implement it
 title: React won't update your state right away.
 ---
 
-React's `setState` function is asynchronous and it can cause some subtle bugs.
+React's `setState` function is asynchronous and it can cause some subtle bugs, if implemented incorrectly.
 
 ## Updating state that depends on current state
 
 Consider the code below:
 
-```jsx{4}
+```jsx{6}
 function App() {
   const [counter, setCounter] = useState(0);
 
@@ -29,7 +29,7 @@ function App() {
         setCounter(counter + 1);
         setCounter(counter + 1);
       }}>
-      Increase by 3
+      Increase counter by 3
     </button>
   );
 }
