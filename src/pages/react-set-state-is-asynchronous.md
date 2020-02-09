@@ -77,7 +77,7 @@ A possible solution would be to use the updater function argument, this allow us
 // counter is now: 3
 ```
 
-Now counter has the correct value--`3`. But why is the `console.log` only called once, why don't we see `2` and `3`? That is because sometimes React will defer and batch multiple state updates into a single one. This caused our `useEffect` hook to be called only once.
+Now counter has the correct value--**3**. But why is the `console.log` only called once, why don't we see **2** and **3**? That is because sometimes React will defer and batch multiple state updates into a single one. This caused our `useEffect` hook to be called only once.
 
 You usually won't need to worry about this behaviour, if you opt to use the updater function pattern.
 
