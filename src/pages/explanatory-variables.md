@@ -15,7 +15,7 @@ Consider the code below:
 
 #### Without explanatory variables
 
-```jsx
+```js
 if (window.location.hash === '#_=_') {
   window.history.replaceState(null, null, ' ');
 }
@@ -25,7 +25,7 @@ If you are familiar with the `window` api, you will probably understand what the
 
 #### With explanatory variables and methods
 
-```jsx
+```js
 const FACEBOOK_REDIRECT_HASH = '#_=_';
 const hasFacebookHashInUrl = window.location.hash === FACEBOOK_REDIRECT_HASH;
 
@@ -42,7 +42,7 @@ We can also tell straight away what was the intention behind `js±window.history
 
 **You could even go one step further and rewrite the code as:**
 
-```jsx
+```js
 if (hasFacebookRedirectHashInUrl()) {
   removeHashFromUrl();
 }
@@ -56,6 +56,7 @@ Explanatory variables are essential to make your code maintanable.
 
 <details>
   <summary>By variables, I actually mean constants</summary>
+  </br>
   <p>I chose to use the word variable since it is more commonly used.</p> 
   <p>Very often constants are referred as variables when discussing code.</p>
   <p>Whether this is accurate or not, is a semantic detail and it does not matter in this context—discussing semantics is usually not effective.</p>
@@ -71,8 +72,9 @@ When you start to pay attention to this you will notice that writing a new funct
 
 Most of our time is spent reading and understanding the code that is already there—so you can design a new solution that will work with the current implementation.
 
-> The ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code.
-> ...Therefore, making it easy to read makes it easier to write.
+> The ratio of time spent reading versus writing is well over 10 to 1.
+> </br>We are constantly reading old code as part of the effort to write new code.
+> </br>...Therefore, making it easy to read makes it easier to write.
 > </br>—Robert C. Martin
 
 ### If only you can understand it, only you can maintain it
