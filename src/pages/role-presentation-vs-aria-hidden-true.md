@@ -15,7 +15,7 @@ title: Difference between role presentation and aria-hidden
 
 Setting `role="presentation"` in an element, will convey that the element and all its children should have its HMTL semantics ignored. But the content will **not** be ignored
 
-On the example below, I am using a table for layout(presentation) purposes--therefore the html semantic is not correct and we want to tell assistive technologies that.
+On the example below, I am using a table for layout (presentation) purposes--therefore the html semantic is not correct and we want to tell assistive technologies that.
 
 ```html
 <table role="presentation">
