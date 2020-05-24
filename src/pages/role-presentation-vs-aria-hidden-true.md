@@ -2,7 +2,7 @@
 date: '2020-05-24'
 featuredImage: '../assets/images/squirrel-hiding-behind-leaves.jpg'
 spoiler: How to hide content from assistive technologies
-title: Difference between role="presentation" and aria-hidden="true"
+title: Difference between role presentation and aria-hidden
 ---
 
 ## What are they
