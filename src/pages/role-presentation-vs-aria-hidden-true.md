@@ -1,6 +1,6 @@
 ---
 date: '2020-04-25'
-featuredImage: '../assets/images/whiteboard-guy-planning.jpg'
+featuredImage: '../assets/images/squirrel-hiding-behind-leaves.jpg'
 spoiler: How to hide content from assistive technologies
 title: Difference between role="presentation" and aria-hidden="true"
 ---
